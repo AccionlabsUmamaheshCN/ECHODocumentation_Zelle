@@ -1,0 +1,44 @@
+required:
+  - PayorReferenceId
+  - PayeeFirstName
+  - PayeeLastName
+  - PayeeMobilePhoneNumber
+  - Payeeemailaddress
+  - PaymentAmount
+  - Addenda 
+  - SenderName 
+type: object
+properties:
+  PayorReferencedId:
+    type: string
+    description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
+    maxLength: 150
+    minLength: 1
+  PayeeFirstName: 
+     type: string
+     description: This is the first name of the Payee.
+     maxLength: 100
+  PayeeLastName:
+      type: string
+      description: This is the last name of the Payee.
+      maxLength: 100
+  PayeeMobilePhoneNumber:
+      type: string
+      description: This is the mobile number of the Payee.
+      maxLength: 10
+  Payeeemailaddress:
+      type: string
+      description: This is the email ID of the Payee.
+      pattern: ^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$
+      maxLength: 100
+  PaymentAmount:
+      type: string
+      description: This is the amount to be paid to the Payee.
+  Addenda:
+       type: string
+       description: This is a note sent to the Payee regarding the Payment.
+       maxLength: 150
+  SenderName: 
+        type: string
+        description: This is the name of the Payor.
+        maxLength: 100

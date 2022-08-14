@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: ECHOHUB Zelle Portal  
+  title: ECHOHUB Zelle Portal. 
   contact:
     email: Echo_Crhc@echohealthinc.com
     url: 'https://echohubDocumentation@echohealthinc.com'
